@@ -12,6 +12,15 @@ jobs:
       with:
         image-tag: "sysdiglabs/sysdig:latest"
         sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
+    - name: Sysdig Secure Inline Scan
+      uses: sysdiglabs/scan-action@v1
+      with:
+        # Tag of the image to analyse
+        image-tag:  "sysdiglabs/sysdig:latest"
+        # API token for Sysdig Scanning auth
+        sysdig-secure-token:  ${{ secrets.SYSDIG_SECURE_TOKEN }}
+ 
+
  
  
    
