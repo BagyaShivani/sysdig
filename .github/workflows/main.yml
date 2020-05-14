@@ -6,17 +6,17 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sysdig:latest
+      run: docker build . --file Dockerfile --tag BagyaShivani/sysdig:latest
     - name: Scan image
-      uses: scan-action@v1
+      uses: BagyaShivani/scan-action@v1
       with:
-        image-tag: "sysdig:latest"
+        image-tag: "BagyaShivani/sysdig:latest"
         sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
     - name: Sysdig Secure Inline Scan
-      uses: scan-action@v1
+      uses: BagyaShivani/scan-action@v1
       with:
         # Tag of the image to analyse
-        image-tag:  "sysdig:latest"
+        image-tag:  "BagyaShivani/sysdig:latest"
         # API token for Sysdig Scanning auth
         sysdig-secure-token:  ${{ secrets.SYSDIG_SECURE_TOKEN }}
  
