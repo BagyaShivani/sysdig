@@ -19,6 +19,7 @@ jobs:
         image-tag:  "BagyaShivani/sysdig:latest"
         # API token for Sysdig Scanning auth
         sysdig-secure-token:  ${{ secrets.SYSDIG_SECURE_TOKEN }}
+        
  
 
  
