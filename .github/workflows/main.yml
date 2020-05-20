@@ -23,6 +23,7 @@ jobs:
         sysdig-secure-url:  https://secure.sysdig.com
         # Path to  ur Dockerfile (ex: "./Dockerfile")
         dockerfile-path:  ./Dockerfile
+        docker push bagyashivanic/shiv: sysdig:new 
          
         
  
