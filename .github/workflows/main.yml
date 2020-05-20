@@ -21,7 +21,7 @@ jobs:
         sysdig-secure-token:  ${{ secrets.SYSDIG_SECURE_TOKEN }}
         # Sysdig Secure URL (ex: "https://secure-sysdig.com")
         sysdig-secure-url:  https://secure.sysdig.com
-        # Path to Dockerfile (ex: "./Dockerfile")
+        # Path to  ur Dockerfile (ex: "./Dockerfile")
         dockerfile-path:  ./Dockerfile
          
         
