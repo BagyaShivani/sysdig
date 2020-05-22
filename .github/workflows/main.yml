@@ -17,7 +17,7 @@ jobs:
       with:
         # Tag of the image to analyse
         image-tag:  "sysdig:new"
-        # API token for Sysdig Scanning auth
+        # API token for Sysdig Scanning aut
         sysdig-secure-token:  ${{ secrets.SYSDIG_SECURE_TOKEN }}
         # Sysdig Secure URL (ex: "https://secure-sysdig.com")
         sysdig-secure-url:  https://secure.sysdig.com
